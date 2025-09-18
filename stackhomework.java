@@ -49,7 +49,7 @@ public static boolean isZugi(Stack<int>st)
 public static Stack<int> Doit(Node <Stack<int>> chain)
 {   
     Stack<int> newstack =new Stack<> ();
-    while(chain.getNext()!=null)//להוסיף איך לגשת אל המחסנית
+    while(chain.getNext()!=null)
     { 
         if(isZugi(stack))
         newstack.push(getsumofstack(stack));
@@ -60,3 +60,4 @@ public static Stack<int> Doit(Node <Stack<int>> chain)
 
     return newstack;
 }
+
